@@ -1,4 +1,4 @@
-import typing import List
+from typing import List
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
         n = len(graph)
@@ -14,6 +14,6 @@ class Solution:
             return visited[i] == flag
         visited[i] = flag
         for num in graph[i]:
-            if not self.dfs(visited,num,-flag,graph):
+            if not self.dfs(visited, num, -flag, graph):
                 return False
         return True
