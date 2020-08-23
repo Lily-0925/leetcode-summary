@@ -1,3 +1,4 @@
+import typing import List
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
         n = len(graph)
